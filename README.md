@@ -42,3 +42,6 @@ Usage Example:
 
 
 Any suggestions, fixes or PR's are more then welcome.
+
+
+Update: Added normalized CSV for testing purposes.
