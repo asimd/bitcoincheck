@@ -1,4 +1,4 @@
-Small python script to convert list of Bitcoin private keys into public addresses and check for current balance, total in and total out of that address. 
+Small python script to convert list of Bitcoin / Bitcoin Cash private keys into public addresses and check for current balance, total in and total out of that address. 
 
 Install requirements: 
 
@@ -32,7 +32,7 @@ FROM `bigquery-public-data.github_repos.files` f JOIN
 
 
 
-After that, it uses  [Blockchain.com's](http://blockchain.com) public API to check the balances for the given address.
+After that, it uses [Blockchain's](http://blockchain.com) public API for BTC and [BitBox's](https://rest.bitbox.earth) public API for BCH to check the balances for the given address.
 
 Note: you may be rate limited if triggering too many ruquests, sign up for API key [HERE](https://api.blockchain.info/customer/signup) 
 
