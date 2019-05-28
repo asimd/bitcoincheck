@@ -9,15 +9,15 @@ with open('results.csv') as f:
             repo, file, pkey = line.split(",")
             keys.add(pkey)
 
-print "Btc Key\t\t\t\t\t\t Public Address\t\t\t\t\t Balance:\t Total In:\t Total Out: \n"
+print "Bch Key\t\t\t\t\t\t Public Address\t\t\t\t\t Balance:\t Total In:\t Total Out: \n"
 
 for priv in keys:
     try:
         p = BitcoinPrivateKey(priv)
         pub = p.public_key().address()
-        r = requests.get("https://blockchain.info/rawaddr/{}".format(pub))
-        time.sleep(2)
-        print "{} {} {:20} {:20} {:20}".format(priv, pub, r.json()['final_balance'], r.json()['total_received'], r.json()['total_sent'])
+        r = requests.get("https://rest.bitbox.earth/v1/address/details/{}".format(pub))
+        time.sleep(1)   
+        print "{} {} {:20} {:20} {:20}".format(priv, pub, r.json()['balance'], r.json()['totalReceived'], r.json()['totalSent'])
     except (AssertionError, IndexError):
         pass
     except ValueError:
