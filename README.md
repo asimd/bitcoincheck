@@ -1,7 +1,7 @@
 Small python script to convert list of Bitcoin / Bitcoin Cash private keys into public addresses and check for current balance, total in and total out of that address. 
 
 Install requirements: 
-
+EDITED
 ```python
 python 2.*
 ```
