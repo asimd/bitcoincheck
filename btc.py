@@ -14,7 +14,7 @@ from threading import Lock
 
 # API endpoints
 BTC_API_URL = "https://api.blockcypher.com/v1/btc/main/addrs/{}/balance"
-BTC_API_KEY = "your-api-key-here"
+BTC_API_KEY = "b1a2b1c5a1ac49a9be6fb1e604df2968"
 BCH_API_URL = "https://api.blockchair.com/bitcoin-cash/dashboards/address/{}"
 BCH_FALLBACK_API_URL = "https://rest.bitcoin.com/v2/address/details/{}"
 
