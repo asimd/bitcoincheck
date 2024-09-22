@@ -14,7 +14,7 @@ from threading import Lock
 
 # API endpoints
 BTC_API_URL = "https://api.blockcypher.com/v1/btc/main/addrs/{}/balance"
-BTC_API_KEY = "b1a2b1c5a1ac49a9be6fb1e604df2968"
+BTC_API_KEY = "your-api-key-here"
 BCH_API_URL = "https://api.blockchair.com/bitcoin-cash/dashboards/address/{}"
 BCH_FALLBACK_API_URL = "https://rest.bitcoin.com/v2/address/details/{}"
 
@@ -87,7 +87,7 @@ def retry_with_delay(max_retries, delay):
 def get_btc_balance(address):
     try:
         url = f"{BTC_API_URL.format(address)}?token={BTC_API_KEY}"
-        print(url)
+        print()
         response = requests.get(url, timeout=10)
         data = response.json()
         print(f"BTC API response: {json.dumps(data, indent=2)}")  # Log the full response
