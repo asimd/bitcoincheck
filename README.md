@@ -100,3 +100,8 @@ This project is licensed under the MIT License. You are free to use, modify, and
 ---
 
 **Disclaimer**: This script is for educational and research purposes only. Please ensure you comply with relevant laws and terms of service for any APIs you use, and be responsible when handling
+
+## Support the Project
+If you find this tool useful, you can buy me a coffee:
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/asimd)
